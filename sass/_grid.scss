@@ -1,0 +1,18 @@
+.grid-container {
+    display: grid;
+    margin: 0 auto;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0 1rem;
+    grid-template-areas:
+      "Offer-one Offer-two Offer-three Offer-four"
+      "Offer-one Offer-two Offer-three Offer-four"
+      ". . . .";
+      justify-items: center;
+      
+  }
+  .Offer-one { grid-area: Offer-one;}
+  .Offer-two { grid-area: Offer-two; }
+  .Offer-three { grid-area: Offer-three; }
+  .Offer-four { grid-area: Offer-four; }

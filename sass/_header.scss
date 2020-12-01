@@ -1,0 +1,42 @@
+.header {
+
+    &__logo {
+        height: 10rem;
+        width: auto;
+        float: left;
+        margin-left: 10rem;
+    }
+}
+
+.list {
+    list-style-type: none;
+    float: right;
+    margin-top: 2.5rem;
+    margin-right: 10rem;
+    
+    &__item {
+        display: inline-block;
+        padding: .5rem;
+        margin-left: 4rem;
+        color: $color-primary;
+    }
+
+    &__item a:link,
+    &__item a:visited,
+    &__item a:focus {
+        color: $color-primary;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 2rem;
+        border-bottom: 2px solid transparent;
+        padding: .5rem 0rem;
+        transition: border-bottom .2s;
+    }
+
+    &__item a:hover,
+    &__item a:active {
+        color: $color-primary;
+        border-bottom: 2px solid $color-golden;
+    }
+
+}

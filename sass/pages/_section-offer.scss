@@ -1,0 +1,49 @@
+.section-offer {
+
+    height: 80vh;
+    // background-color: #0f2027;
+    // background-image: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/Stovarise.jpeg);
+    background-attachment: fixed;
+}
+
+.offer-grid {
+    margin-top: 7rem;
+}
+
+.ponuda-slika {
+    width: 20rem;
+    height: 40rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 2);
+    border-radius: 3%;
+    background-image: url(../../img/Merble.jpeg);
+
+}
+
+.ponuda-slika-2{
+    width: 20rem;
+    height: 40rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 2);
+    border-radius: 3%;
+    background-image: url(../../img/Onyx.jpg);
+}
+
+.ponuda-slika-3{
+    width: 20rem;
+    height: 40rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 2);
+    border-radius: 3%;
+    background-image: url(../../img/Terazzo.jpeg);
+} 
+
+.ponuda-slika-4{
+    width: 20rem;
+    height: 40rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 2);
+    border-radius: 3%;
+    background-image: url(../../img/Travertine.jpeg);
+} 
+
+.opis-kamena {
+    font-size: 2rem;
+}

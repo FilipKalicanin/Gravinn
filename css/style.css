@@ -1,0 +1,283 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: grey;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.header__logo {
+  height: 10rem;
+  width: auto;
+  float: left;
+  margin-left: 10rem; }
+
+.list {
+  list-style-type: none;
+  float: right;
+  margin-top: 2.5rem;
+  margin-right: 10rem; }
+  .list__item {
+    display: inline-block;
+    padding: .5rem;
+    margin-left: 4rem;
+    color: #b8b9b9; }
+  .list__item a:link,
+  .list__item a:visited,
+  .list__item a:focus {
+    color: #b8b9b9;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-bottom: 2px solid transparent;
+    padding: .5rem 0rem;
+    transition: border-bottom .2s; }
+  .list__item a:hover,
+  .list__item a:active {
+    color: #b8b9b9;
+    border-bottom: 2px solid #ddb73b; }
+
+.heading-medium {
+  font-size: 5rem;
+  color: #ddb73b;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  letter-spacing: .6rem;
+  text-transform: uppercase; }
+
+.heading-small {
+  font-size: 3.2rem;
+  color: #ddb73b;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  letter-spacing: .4rem;
+  text-transform: uppercase; }
+
+.section-main {
+  height: 85vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/BackGround1st.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.heading-primary {
+  width: 100rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  text-align: center; }
+  .heading-primary__sentence-one {
+    color: #b8b9b9;
+    font-size: 10rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300; }
+  .heading-primary__sentence-two {
+    color: #b8b9b9;
+    font-size: 7rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300; }
+
+.section-about {
+  background-color: #0f2027;
+  background-image: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  height: 60vh; }
+
+.container-naslov {
+  display: flex;
+  justify-content: center; }
+
+.naslov {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  width: 50rem; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  margin-top: 5rem;
+  text-align: center; }
+  .container .about-first {
+    margin-right: 10rem; }
+  .container .about-list {
+    list-style-type: none;
+    font-size: 2.5rem;
+    padding: 2rem;
+    line-height: 1.6; }
+
+.section-offer {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/Stovarise.jpeg);
+  background-attachment: fixed; }
+
+.offer-grid {
+  margin-top: 7rem; }
+
+.ponuda-slika {
+  width: 20rem;
+  height: 40rem;
+  box-shadow: 0 1.5rem 4rem black;
+  border-radius: 3%;
+  background-image: url(../../img/Merble.jpeg); }
+
+.ponuda-slika-2 {
+  width: 20rem;
+  height: 40rem;
+  box-shadow: 0 1.5rem 4rem black;
+  border-radius: 3%;
+  background-image: url(../../img/Onyx.jpg); }
+
+.ponuda-slika-3 {
+  width: 20rem;
+  height: 40rem;
+  box-shadow: 0 1.5rem 4rem black;
+  border-radius: 3%;
+  background-image: url(../../img/Terazzo.jpeg); }
+
+.ponuda-slika-4 {
+  width: 20rem;
+  height: 40rem;
+  box-shadow: 0 1.5rem 4rem black;
+  border-radius: 3%;
+  background-image: url(../../img/Travertine.jpeg); }
+
+.opis-kamena {
+  font-size: 2rem; }
+
+.section-work {
+  padding: 1rem;
+  background-color: #0f2027;
+  background-image: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364); }
+
+.work-container {
+  padding: 1rem;
+  margin-top: 5rem;
+  background-color: #0f2027;
+  background-image: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column; }
+
+.row-first {
+  display: flex;
+  justify-content: space-around; }
+
+.work-container-item {
+  margin: 2rem; }
+
+.work-photo {
+  width: 40rem;
+  height: 40rem;
+  box-shadow: 0 1.5rem 4rem black;
+  border-radius: 3%; }
+
+.contact {
+  padding: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/contactbackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.container-box {
+  display: flex;
+  padding: 4.5rem;
+  justify-content: space-around; }
+
+.kontakt-mapa {
+  flex: 0 0 30%; }
+
+.adress {
+  margin-bottom: 5rem;
+  display: inline-block; }
+
+.info {
+  padding: .6rem;
+  font-size: 1.6rem;
+  color: #b8b9b9;
+  border-bottom: 1px solid #ddb73b; }
+
+.posalji-poruku {
+  flex: 0 0 30%; }
+
+.form {
+  display: block;
+  font-size: 2rem;
+  color: #ddb73b; }
+  .form__label {
+    display: block;
+    font-size: 2rem; }
+  .form__input {
+    display: block;
+    font-size: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: transparent;
+    border: 1px solid #ddb73b;
+    margin-bottom: 2rem; }
+  .form__select {
+    display: block;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #b8b9b9;
+    margin-bottom: 2rem; }
+  .form__textarea {
+    display: block;
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid #ddb73b;
+    margin-bottom: 2rem; }
+  .form__button {
+    display: block;
+    font-size: 2rem; }
+
+.zakljucak {
+  height: 5vw;
+  background-color: black;
+  position: relative; }
+
+.footer-text {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.rights {
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  color: #b8b9b9; }
+
+.grid-container {
+  display: grid;
+  margin: 0 auto;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0 1rem;
+  grid-template-areas: "Offer-one Offer-two Offer-three Offer-four" "Offer-one Offer-two Offer-three Offer-four" ". . . .";
+  justify-items: center; }
+
+.Offer-one {
+  grid-area: Offer-one; }
+
+.Offer-two {
+  grid-area: Offer-two; }
+
+.Offer-three {
+  grid-area: Offer-three; }
+
+.Offer-four {
+  grid-area: Offer-four; }

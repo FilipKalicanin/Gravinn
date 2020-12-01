@@ -1,0 +1,29 @@
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-secondary: 'Josefin Sans', sans-serif;
+
+// COLORS
+$color-primary: #b8b9b9;
+$color-golden: #ddb73b;
+$color-black: #0000;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: $font-primary;
+    color: grey;
+    font-weight: 300;
+    line-height: 1.6;
+}
