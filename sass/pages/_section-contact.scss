@@ -1,5 +1,5 @@
 .contact {
-    padding: 1rem;
+    padding: 3rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/contactbackground.jpg);
     background-size: cover;
     background-position: center;
@@ -17,7 +17,7 @@
 }
 
 .adress {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     display: inline-block;
 }
 
@@ -27,6 +27,26 @@
     color: $color-primary;
     border-bottom: 1px solid $color-golden;
 }
+
+.contact-icons {
+
+    margin-bottom: 4rem;
+}
+    .contact-icons__list {
+        list-style-type: none;
+    }
+
+    .contact-icons__list-item {
+        padding: 1rem;
+        display: inline;
+    }
+
+    .contact-icons__list-item-one {
+        width: 3rem;
+        height: 3rem;
+        fill: $color-primary;
+    }
+
 
 .posalji-poruku {
     flex: 0 0 30%;

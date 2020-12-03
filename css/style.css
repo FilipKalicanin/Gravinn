@@ -52,7 +52,8 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   letter-spacing: .6rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 4rem; }
 
 .heading-small {
   font-size: 3.2rem;
@@ -63,7 +64,7 @@ body {
   text-transform: uppercase; }
 
 .section-main {
-  height: 85vh;
+  height: 90vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/BackGround1st.jpg);
   background-size: cover;
   background-position: center;
@@ -91,39 +92,41 @@ body {
   background-color: #0f2027;
   background-image: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
   background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  height: 60vh; }
+  padding: 3rem; }
 
 .container-naslov {
   display: flex;
   justify-content: center; }
 
 .naslov {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   text-align: center;
   width: 50rem; }
 
 .container {
   display: flex;
-  justify-content: center;
-  padding: 3rem;
-  margin-top: 5rem;
-  text-align: center; }
-  .container .about-first {
-    margin-right: 10rem; }
+  justify-content: space-evenly;
+  padding: 3rem; }
+  .container .heading-small {
+    text-align: center; }
   .container .about-list {
     list-style-type: none;
-    font-size: 2.5rem;
-    padding: 2rem;
+    font-size: 4rem;
+    padding: 3rem;
     line-height: 1.6; }
+  .container .icons {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1.5rem;
+    fill: #ddb73b; }
 
 .section-offer {
-  height: 80vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/Stovarise.jpeg);
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding: 3rem;
+  position: relative; }
 
 .offer-grid {
-  margin-top: 7rem; }
+  padding: 3rem; }
 
 .ponuda-slika {
   width: 20rem;
@@ -156,36 +159,49 @@ body {
 .opis-kamena {
   font-size: 2rem; }
 
+.button-offer {
+  display: flex;
+  justify-content: center; }
+
 .section-work {
-  padding: 1rem;
+  padding: 3rem;
   background-color: #0f2027;
   background-image: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
   background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364); }
 
 .work-container {
   padding: 1rem;
-  margin-top: 5rem;
   background-color: #0f2027;
   background-image: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
   background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   display: flex;
   flex-direction: column; }
 
-.row-first {
+.row {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-evenly; }
 
 .work-container-item {
-  margin: 2rem; }
+  margin: 2rem;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 3%;
+  box-shadow: 0 1.5rem 4rem black;
+  background-color: black; }
 
 .work-photo {
   width: 40rem;
   height: 40rem;
-  box-shadow: 0 1.5rem 4rem black;
-  border-radius: 3%; }
+  border-radius: 3%;
+  opacity: .6;
+  transition: transform 0.5s, opacity 0.5s; }
+
+.work-photo:hover {
+  opacity: 1;
+  transform: scale(1.05); }
 
 .contact {
-  padding: 1rem;
+  padding: 3rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/contactbackground.jpg);
   background-size: cover;
   background-position: center;
@@ -200,7 +216,7 @@ body {
   flex: 0 0 30%; }
 
 .adress {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   display: inline-block; }
 
 .info {
@@ -208,6 +224,21 @@ body {
   font-size: 1.6rem;
   color: #b8b9b9;
   border-bottom: 1px solid #ddb73b; }
+
+.contact-icons {
+  margin-bottom: 4rem; }
+
+.contact-icons__list {
+  list-style-type: none; }
+
+.contact-icons__list-item {
+  padding: 1rem;
+  display: inline; }
+
+.contact-icons__list-item-one {
+  width: 3rem;
+  height: 3rem;
+  fill: #b8b9b9; }
 
 .posalji-poruku {
   flex: 0 0 30%; }
@@ -242,6 +273,22 @@ body {
   .form__button {
     display: block;
     font-size: 2rem; }
+
+.btn-primary:link, .btn-primary:visited {
+  color: #b8b9b9;
+  font-size: 2rem;
+  text-decoration: none;
+  border: 1px solid #b8b9b9;
+  padding: 1rem 2.5rem;
+  border-radius: 10rem;
+  font-weight: 600;
+  letter-spacing: .3rem;
+  transition: all .2s; }
+
+.btn-primary:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  color: #ddb73b;
+  border: 1px solid #ddb73b; }
 
 .zakljucak {
   height: 5vw;
