@@ -23,27 +23,27 @@ html {
     font-size: 62.5%; //1rem == 10px;  10px/16px = 62.5%;
 
     @include respond('1125') { // width < 1800px?
-        font-size: 56.25%; // 1rem = 9px, 9/16
+        font-size: 57.25%; // 1rem = 9px, 9/16
     }
 
     @include respond('75') { // width > 1200px?
-        font-size: 52%;
+        font-size: 54%;
     }
 
     @include respond('5937') { // width > 950px?
-        font-size: 45.75%;
+        font-size: 46.75%;
     }
 
     @include respond('5818') { // width > 900px?
-        font-size: 40%;
+        font-size: 42%;
     }
 
     @include respond('5237') { // width > 838px?
-        font-size: 27%;
+        font-size: 30%;
     }
 
     @include respond('375') { // width > 600px?
-        font-size: 20.75%;
+        font-size: 24.75%;
     }
 
     @include respond('25') { // width > 600px?
@@ -56,4 +56,9 @@ body {
     color: grey;
     font-weight: 300;
     line-height: 1.6;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-golden;
 }

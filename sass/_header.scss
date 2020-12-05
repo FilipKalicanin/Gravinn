@@ -5,7 +5,18 @@
         width: auto;
         float: left;
         margin-left: 10rem;
+
+        @include respond('5237') { // width > 838px?
+            height: 14rem;
+            margin-left: 6rem;
+        }
+
+        @include respond('375') { // width > 838px?
+            height: 15rem;
+            margin-left: 6rem;
+        }
     }
+
 }
 
 .list {
@@ -31,6 +42,14 @@
         border-bottom: 2px solid transparent;
         padding: .5rem 0rem;
         transition: border-bottom .2s;
+
+        @include respond('5237') { // width > 838px?
+            font-size: 3rem;
+        }
+
+        @include respond('375') { // width > 838px?
+            font-size: 4rem;
+        }
     }
 
     &__item a:hover,
@@ -38,5 +57,6 @@
         color: $color-primary;
         border-bottom: 2px solid $color-golden;
     }
+
 
 }
