@@ -1,3 +1,24 @@
+/*
+
+0 - 600px :              Phone
+
+600px - 900px :          Tablet portrait
+
+900px - 1200px :         Tablep lanscape
+
+1200px - 1800px :        Desctop (normal)
+
+1800px + :               Big Desctop
+
+
+$breakpoint argument choices:
+
+
+
+1em = 16px; by default
+
+Order: base + typography > general leyaut > page layout > components
+*/
 *,
 *::before,
 *::after {
@@ -8,6 +29,27 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 52%; } }
+  @media (max-width: 59.37em) {
+    html {
+      font-size: 45.75%; } }
+  @media (max-width: 58.18em) {
+    html {
+      font-size: 40%; } }
+  @media (max-width: 52.37em) {
+    html {
+      font-size: 27%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 20.75%; } }
+  @media (max-width: 25em) {
+    html {
+      font-size: 20%; } }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -53,7 +95,8 @@ body {
   font-weight: 400;
   letter-spacing: .6rem;
   text-transform: uppercase;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #ddb73b; }
 
 .heading-small {
   font-size: 3.2rem;
@@ -127,6 +170,9 @@ body {
 
 .offer-grid {
   padding: 3rem; }
+  @media (max-width: 25em) {
+    .offer-grid {
+      display: block; } }
 
 .ponuda-slika {
   width: 20rem;
@@ -170,28 +216,23 @@ body {
   background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364); }
 
 .work-container {
-  padding: 1rem;
-  background-color: #0f2027;
-  background-image: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   display: flex;
-  flex-direction: column; }
-
-.row {
-  display: flex;
-  justify-content: space-evenly; }
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-content: space-around; }
 
 .work-container-item {
   margin: 2rem;
-  width: 40rem;
-  height: 40rem;
+  width: 35rem;
+  height: 35rem;
   border-radius: 3%;
   box-shadow: 0 1.5rem 4rem black;
   background-color: black; }
 
 .work-photo {
-  width: 40rem;
-  height: 40rem;
+  width: 35rem;
+  height: 35rem;
   border-radius: 3%;
   opacity: .6;
   transition: transform 0.5s, opacity 0.5s; }
@@ -215,6 +256,10 @@ body {
 .kontakt-mapa {
   flex: 0 0 30%; }
 
+.map-size {
+  width: 50rem;
+  height: 30rem; }
+
 .adress {
   margin-bottom: 4rem;
   display: inline-block; }
@@ -224,6 +269,10 @@ body {
   font-size: 1.6rem;
   color: #b8b9b9;
   border-bottom: 1px solid #ddb73b; }
+  @media (max-width: 25em) {
+    .info {
+      font-size: 3rem;
+      color: #ddb73b; } }
 
 .contact-icons {
   margin-bottom: 4rem; }
@@ -256,8 +305,15 @@ body {
     padding: 1.5rem 2rem;
     border-radius: 2px;
     background-color: transparent;
-    border: 1px solid #ddb73b;
-    margin-bottom: 2rem; }
+    border-bottom: 1px solid #ddb73b;
+    margin-bottom: 2rem;
+    color: #ddb73b;
+    outline: none;
+    transition: all .2s; }
+  .form__input::placeholder {
+    color: #afafaf; }
+  .form__input:focus {
+    border: 1px solid #ddb73b; }
   .form__select {
     display: block;
     font-size: 2rem;
@@ -269,7 +325,12 @@ body {
     width: 50%;
     background-color: transparent;
     border: 1px solid #ddb73b;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    color: #ddb73b;
+    outline: none; }
+    @media (max-width: 25em) {
+      .form__textarea {
+        width: 100%; } }
   .form__button {
     display: block;
     font-size: 2rem; }
@@ -307,6 +368,27 @@ body {
   font-size: 1.6rem;
   color: #b8b9b9; }
 
+/*
+
+0 - 600px :              Phone
+
+600px - 900px :          Tablet portrait
+
+900px - 1200px :         Tablep lanscape
+
+1200px - 1800px :        Desctop (normal)
+
+1800px + :               Big Desctop
+
+
+$breakpoint argument choices:
+
+
+
+1em = 16px; by default
+
+Order: base + typography > general leyaut > page layout > components
+*/
 .grid-container {
   display: grid;
   margin: 0 auto;

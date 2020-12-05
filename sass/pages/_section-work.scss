@@ -5,32 +5,35 @@
     background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
 
+
 .work-container {
-    padding: 1rem;
-    background-color: #0f2027;
-    background-image: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-content: space-around;
+
 }
 
-.row {
-    display: flex;
-    justify-content: space-evenly;
-}
 
 .work-container-item {
     margin: 2rem;
-    width: 40rem;
-    height: 40rem;
+    width: 35rem;
+    height: 35rem;
     border-radius: 3%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 2);
     background-color: black;
+
+    // @include respond(tab-port) { // width < 900?
+    //     flex: ;
+    // }
+
 }
 
 .work-photo {
-    width: 40rem;
-    height: 40rem;
+    width: 35rem;
+    height: 35rem;
     border-radius: 3%;
     opacity: .6;
     transition: transform 0.5s, opacity 0.5s;

@@ -1,0 +1,55 @@
+// MEDIA QUERY MANAGER
+
+/*
+
+0 - 600px :              Phone
+
+600px - 900px :          Tablet portrait
+
+900px - 1200px :         Tablep lanscape
+
+1200px - 1800px :        Desctop (normal)
+
+1800px + :               Big Desctop
+
+
+$breakpoint argument choices:
+
+
+
+1em = 16px; by default
+
+Order: base + typography > general leyaut > page layout > components
+*/
+
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == '25' {
+        @media (max-width: 25em) { @content }; //400px / 16
+    }
+
+    @if $breakpoint == '375' {
+        @media (max-width: 37.5em) { @content }; //600px / 16
+    }
+
+    @if $breakpoint == '5237' {
+        @media (max-width: 52.37em) { @content }; //838px / 16
+    }
+
+    @if $breakpoint == '5818' {
+        @media (max-width: 58.18em) { @content }; //900px / 16
+    }
+
+    @if $breakpoint == '5937' { 
+        @media (max-width: 59.37em) { @content }; //950px / 16
+    }
+
+    @if $breakpoint == '75' {
+        @media (max-width: 75em) { @content }; //1200px / 16
+    }
+
+    @if $breakpoint == '1125' {
+        @media (min-width: 112.5em) { @content }; //1800px / 16
+    }
+}

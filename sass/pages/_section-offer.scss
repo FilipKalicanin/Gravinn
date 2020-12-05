@@ -7,6 +7,10 @@
 
 .offer-grid {
     padding: 3rem;
+    
+    @include respond('25') { // width > 600px?
+        display: block;
+    }
 }
 
 .ponuda-slika {
@@ -24,6 +28,7 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 2);
     border-radius: 3%;
     background-image: url(../../img/Onyx.jpg);
+
 }
 
 .ponuda-slika-3{

@@ -1,3 +1,5 @@
+@import "mixins";
+
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-secondary: 'Josefin Sans', sans-serif;
@@ -17,8 +19,35 @@ $color-black: #0000;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 62.5%; //1rem == 10px;  10px/16px = 62.5%;
 
+    @include respond('1125') { // width < 1800px?
+        font-size: 56.25%; // 1rem = 9px, 9/16
+    }
+
+    @include respond('75') { // width > 1200px?
+        font-size: 52%;
+    }
+
+    @include respond('5937') { // width > 950px?
+        font-size: 45.75%;
+    }
+
+    @include respond('5818') { // width > 900px?
+        font-size: 40%;
+    }
+
+    @include respond('5237') { // width > 838px?
+        font-size: 27%;
+    }
+
+    @include respond('375') { // width > 600px?
+        font-size: 20.75%;
+    }
+
+    @include respond('25') { // width > 600px?
+        font-size: 20%;
+    }
 }
 
 body {
